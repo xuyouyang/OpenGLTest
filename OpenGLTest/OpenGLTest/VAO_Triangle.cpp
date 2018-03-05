@@ -1,10 +1,11 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include "stb_image.h"
 
 #include <iostream>
 #include <math.h>
 
-void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+void framebuffer_size_callback_vao(GLFWwindow* window, int width, int height);
 
 void VAO_Function(GLFWwindow* window);
 void EBO_Function(GLFWwindow* window);
@@ -13,7 +14,8 @@ void EBO_Function(GLFWwindow* window);
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
-int main()
+int main_VAO_Triangle()
+//int main()
 {
     // 窗口初始化
     glfwInit();
@@ -25,7 +27,7 @@ int main()
 #endif
     GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
     glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback_vao);
     gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 
     VAO_Function(window);
@@ -36,7 +38,7 @@ int main()
 }
 
 // 视图窗口大小改变时的回调函数
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+void framebuffer_size_callback_vao(GLFWwindow* window, int width, int height)
 {
     glViewport(0, 0, width, height);
 }

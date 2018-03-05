@@ -12,6 +12,8 @@
 		9596B9A22038673E006F5354 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9596B9A12038673E006F5354 /* libGLEW.2.1.0.dylib */; };
 		9596B9A42038674F006F5354 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9596B9A32038674E006F5354 /* libglfw.3.2.dylib */; };
 		9596B9A620387371006F5354 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 9596B9A520387371006F5354 /* glad.c */; };
+		9596B9BF203DE1DA006F5354 /* stb_image_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9596B9BE203DE1DA006F5354 /* stb_image_impl.cpp */; };
+		9596B9C1204D8573006F5354 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9596B9C0204D8573006F5354 /* Texture.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,10 @@
 		9596B9A12038673E006F5354 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		9596B9A32038674E006F5354 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		9596B9A520387371006F5354 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = include/glad/src/glad.c; sourceTree = SOURCE_ROOT; };
+		9596B9BD203DE1C2006F5354 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		9596B9BE203DE1DA006F5354 /* stb_image_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image_impl.cpp; sourceTree = "<group>"; };
+		9596B9C0204D8573006F5354 /* Texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
+		9596B9C2204D8DCF006F5354 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +76,11 @@
 			isa = PBXGroup;
 			children = (
 				9596B99720386496006F5354 /* VAO_Triangle.cpp */,
+				9596B9C0204D8573006F5354 /* Texture.cpp */,
 				9596B9A520387371006F5354 /* glad.c */,
+				9596B9BD203DE1C2006F5354 /* stb_image.h */,
+				9596B9BE203DE1DA006F5354 /* stb_image_impl.cpp */,
+				9596B9C2204D8DCF006F5354 /* container.jpg */,
 			);
 			path = OpenGLTest;
 			sourceTree = "<group>";
@@ -143,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9596B99820386496006F5354 /* VAO_Triangle.cpp in Sources */,
+				9596B9C1204D8573006F5354 /* Texture.cpp in Sources */,
+				9596B9BF203DE1DA006F5354 /* stb_image_impl.cpp in Sources */,
 				9596B9A620387371006F5354 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
