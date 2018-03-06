@@ -14,6 +14,7 @@
 		9596B9A620387371006F5354 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 9596B9A520387371006F5354 /* glad.c */; };
 		9596B9BF203DE1DA006F5354 /* stb_image_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9596B9BE203DE1DA006F5354 /* stb_image_impl.cpp */; };
 		9596B9C1204D8573006F5354 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9596B9C0204D8573006F5354 /* Texture.cpp */; };
+		9596B9C5204EBEBB006F5354 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9596B9C3204EBEBA006F5354 /* Shader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,8 @@
 		9596B9BE203DE1DA006F5354 /* stb_image_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image_impl.cpp; sourceTree = "<group>"; };
 		9596B9C0204D8573006F5354 /* Texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
 		9596B9C2204D8DCF006F5354 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+		9596B9C3204EBEBA006F5354 /* Shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		9596B9C4204EBEBB006F5354 /* Shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				9596B9BD203DE1C2006F5354 /* stb_image.h */,
 				9596B9BE203DE1DA006F5354 /* stb_image_impl.cpp */,
 				9596B9C2204D8DCF006F5354 /* container.jpg */,
+				9596B9C3204EBEBA006F5354 /* Shader.cpp */,
+				9596B9C4204EBEBB006F5354 /* Shader.hpp */,
 			);
 			path = OpenGLTest;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				9596B9C1204D8573006F5354 /* Texture.cpp in Sources */,
 				9596B9BF203DE1DA006F5354 /* stb_image_impl.cpp in Sources */,
 				9596B9A620387371006F5354 /* glad.c in Sources */,
+				9596B9C5204EBEBB006F5354 /* Shader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
